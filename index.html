@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Konectd Payments – Fast, Reliable Payment Processing</title>
+  <meta name="description" content="Supercharge your business with fast deposits, unlimited scale, and zero account freezes."/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#4f46e5',
+            accent: '#6366f1',
+            dark: '#0f172a',
+            metallic: '#c7d2fe',
+          }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', system-ui, sans-serif; background: linear-gradient(to bottom right, #0f172a, #1e1b4b, #0f172a); }
+    .glass { backdrop-filter: blur(12px); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.12); box-shadow: 0 8px 32px rgba(0,0,0,0.35); }
+    .glass-hover:hover { background: rgba(255,255,255,0.08); transform: translateY(-4px); box-shadow: 0 16px 40px rgba(99,102,241,0.15); transition: all 0.3s ease; }
+    .metallic-text { background: linear-gradient(90deg, #c7d2fe, #ffffff); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .section-glow { background: radial-gradient(circle at 50% 50%, rgba(99,102,241,0.08), transparent 70%); }
+    .marquee { animation: marquee 20s linear infinite; }
+    @keyframes marquee {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+  </style>
+</head>
+<body class="text-white min-h-screen overflow-x-hidden">
+
+  <!-- Top Bar -->
+  <div class="fixed top-0 w-full z-50 bg-dark/80 backdrop-blur-md text-gray-300 text-sm">
+    <div class="max-w-7xl mx-auto px-6 py-2 flex justify-end items-center space-x-6">
+      <a href="tel:+12135315415" class="hover:text-white transition flex items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 mr-1">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+        </svg>
+        +1 (213) 531-5415
+      </a>
+      <a href="tel:+18668492445" class="hover:text-white transition">Support</a>
+      <a href="/sign-in/" class="hover:text-white transition">Sign In</a>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="fixed top-10 w-full z-40 glass">
+    <nav class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+      <div class="flex flex-col items-start">
+        <div class="text-3xl font-extrabold metallic-text">
+          Konectd Payments
+        </div>
+        <div class="flex items-center mt-1">
+          <span class="text-sm text-gray-400 mr-2">Powered by</span>
+          <img src="ks-konectd-solutions-logo.png" alt="Konectd Solutions" class="h-5">
+        </div>
+      </div>
+
+      <div class="hidden md:flex items-center space-x-10 text-lg font-medium">
+        <a href="/payments/" class="hover:text-accent transition">Payments</a>
+        <a href="/platform/" class="hover:text-accent transition">Platform</a>
+        <a href="/contact/" class="hover:text-accent transition">Contact</a>
+      </div>
+
+      <a href="/apply-now/" class="bg-gradient-to-r from-accent to-indigo-600 px-7 py-3 rounded-full font-semibold shadow-md hover:shadow-lg transition whitespace-nowrap">
+        Apply Now
+      </a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="pt-48 pb-28 relative section-glow">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold metallic-text mb-6 tracking-tight">
+        Switch Your Payments to the Fast Lane
+      </h1>
+      <p class="text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto mb-10 font-light leading-relaxed">
+        Supercharge your business with fast deposits, unlimited scale, and zero account freezes.*
+      </p>
+
+      <div class="flex flex-col sm:flex-row justify-center gap-6">
+        <a href="/apply-now/" class="bg-gradient-to-r from-indigo-600 to-accent px-10 py-5 rounded-xl text-lg font-semibold shadow-lg hover:shadow-xl transition">
+          Apply Now
+        </a>
+        <a href="/contact/" class="glass px-10 py-5 rounded-xl text-lg font-semibold hover:bg-white/10 transition border border-white/20">
+          Talk to an Expert
+        </a>
+      </div>
+
+      <!-- Benefits -->
+      <div class="grid md:grid-cols-4 gap-8 mt-20">
+        <div class="glass p-8 rounded-2xl glass-hover flex items-start">
+          <span class="text-5xl mr-4">⚡</span>
+          <div>
+            <h3 class="text-xl font-bold metallic-text mb-3">Turbocharged Deposits</h3>
+            <p class="text-gray-300 text-base">Fast deposits to maximize your business cashflow.</p>
+          </div>
+        </div>
+        <div class="glass p-8 rounded-2xl glass-hover flex items-start">
+          <span class="text-5xl mr-4">📈</span>
+          <div>
+            <h3 class="text-xl font-bold metallic-text mb-3">Unlimited Scaling</h3>
+            <p class="text-gray-300 text-base">Uncapped processing so you can focus on your success.</p>
+          </div>
+        </div>
+        <div class="glass p-8 rounded-2xl glass-hover flex items-start">
+          <span class="text-5xl mr-4">🔓</span>
+          <div>
+            <h3 class="text-xl font-bold metallic-text mb-3">No Account Holds</h3>
+            <p class="text-gray-300 text-base">Don't worry about funds being held or accounts frozen.*</p>
+          </div>
+        </div>
+        <div class="glass p-8 rounded-2xl glass-hover flex items-start">
+          <span class="text-5xl mr-4">💰</span>
+          <div>
+            <h3 class="text-xl font-bold metallic-text mb-3">"Meet or Beat" Rates</h3>
+            <p class="text-gray-300 text-base">Maximize profits with the most competitive processing rates.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Accepted Payment Methods -->
+  <section class="py-16 relative section-glow overflow-hidden">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold metallic-text text-center mb-8">Accepted Payment Methods</h2>
+      <div class="flex">
+        <div class="flex space-x-8 marquee whitespace-nowrap">
+          <img src="visa.png" alt="Visa" class="h-12">
+          <img src="Mastercard.png" alt="Mastercard" class="h-12">
+          <img src="Amex.png" alt="American Express" class="h-12">
+          <img src="discover.png" alt="Discover" class="h-12">
+          <img src="apple_pay.png" alt="Apple Pay" class="h-12">
+          <img src="google_pay.png" alt="Google Pay" class="h-12">
+          <img src="samsung_pay.png" alt="Samsung Pay" class="h-12">
+          <img src="jcb.png" alt="JCB" class="h-12">
+          <img src="union_pay.png" alt="UnionPay" class="h-12">
+          <!-- Repeat -->
+          <img src="visa.png" alt="Visa" class="h-12">
+          <img src="Mastercard.png" alt="Mastercard" class="h-12">
+          <img src="Amex.png" alt="American Express" class="h-12">
+          <img src="discover.png" alt="Discover" class="h-12">
+          <img src="apple_pay.png" alt="Apple Pay" class="h-12">
+          <img src="google_pay.png" alt="Google Pay" class="h-12">
+          <img src="samsung_pay.png" alt="Samsung Pay" class="h-12">
+          <img src="jcb.png" alt="JCB" class="h-12">
+          <img src="union_pay.png" alt="UnionPay" class="h-12">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Choose Your Path -->
+  <section class="py-28 relative section-glow">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-5xl font-extrabold metallic-text mb-12">Choose Your Path</h2>
+      <div class="grid md:grid-cols-2 gap-12">
+        <div class="glass p-10 rounded-3xl glass-hover">
+          <h3 class="text-4xl font-bold metallic-text mb-6">Payments</h3>
+          <p class="text-xl text-gray-300 mb-8">
+            Accept payments online, in-person, or both — with fast funding, no holds*, and the best rates.
+          </p>
+          <a href="/payments/" class="inline-block bg-gradient-to-r from-accent to-indigo-600 px-10 py-5 rounded-xl text-xl font-semibold shadow-lg hover:shadow-xl transition">
+            Explore Payments
+          </a>
+        </div>
+        <div class="glass p-10 rounded-3xl glass-hover">
+          <h3 class="text-4xl font-bold metallic-text mb-6">Platform</h3>
+          <p class="text-xl text-gray-300 mb-8">
+            Run your entire payments business from one powerful ERP — reporting, analytics, enablement, and more.
+          </p>
+          <a href="/platform/" class="inline-block bg-gradient-to-r from-accent to-indigo-600 px-10 py-5 rounded-xl text-xl font-semibold shadow-lg hover:shadow-xl transition">
+            Explore Platform
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-12 glass border-t border-white/10">
+    <div class="max-w-6xl mx-auto px-6 text-gray-400 text-sm">
+      <div class="grid md:grid-cols-5 gap-8 mb-8">
+        <div>
+          <h3 class="text-lg font-bold text-white mb-4">Our Solutions</h3>
+          <ul class="space-y-2">
+            <li><a href="/payments/" class="hover:text-white">Payments</a></li>
+            <li><a href="/platform/" class="hover:text-white">Platform</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold text-white mb-4">Company</h3>
+          <ul class="space-y-2">
+            <li><a href="/careers/" class="hover:text-white">Careers</a></li>
+            <li><a href="/privacy-policy/" class="hover:text-white">Privacy Policy</a></li>
+            <li><a href="/terms-of-use/" class="hover:text-white">Terms of Use</a></li>
+            <li><a href="/acceptable-use-policy/" class="hover:text-white">Acceptable Use Policy</a></li>
+            <li><a href="/e-sign-disclosure/" class="hover:text-white">E-SIGN Disclosure</a></li>
+            <li><a href="/sales-agent-disclosure/" class="hover:text-white">Sales Agent & Referral Partner Disclosure</a></li>
+            <li><a href="/contact/" class="hover:text-white">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-span-3">
+          <h3 class="text-lg font-bold text-white mb-4">Have questions or need customer support?</h3>
+          <a href="/contact/" class="text-accent hover:text-white">Contact Us</a>
+          <div class="flex space-x-4 mt-4">
+            <img src="pci.png" alt="PCI DSS" class="h-8">
+            <img src="eta.png" alt="ETA" class="h-8">
+            <img src="mac.png" alt="MAC" class="h-8">
+            <img src="ach.png" alt="ACH Network" class="h-8">
+          </div>
+          <p class="mt-4 text-xs">All trademarks, copyrights and logos referenced are the property of their respective owners.</p>
+          <p class="mt-4 text-xs">* The availability of next day funding, the implementation of reserves, the notion of unlimited scaling, and the assurance against account holds are expressly conditioned upon the prudent and compliant activities of a qualified merchant. All merchant accounts are subject to the various contractual rights and regulatory provisions imposed by banks, card companies and state and federal regulators. In addition, Konectd maintains discretionary authority, as it deemed appropriate, to apply reserves, impose volume limitations and/or institute funding delays for reasons aligned with its fiduciary responsibilities. This capability is required to uphold the integrity of financial processes and maintain a judicious operational framework.</p>
+        </div>
+      </div>
+      <div class="text-center mt-8 flex justify-center items-center">
+        <p>Konectd Payments powered by</p>
+        <img src="ks-konectd-solutions-logo.png" alt="Konectd Solutions" class="ml-2 h-6">
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
