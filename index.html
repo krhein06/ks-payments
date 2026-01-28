@@ -6,42 +6,78 @@
   <title>Konectd Payments – Fast, Reliable Payment Processing</title>
   <meta name="description" content="Supercharge your business with fast deposits, unlimited scale, and zero account freezes."/>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
   <script>
     tailwind.config = {
+      darkMode: 'class',
       theme: {
         extend: {
           colors: {
-            primary: '#4f46e5',
-            accent: '#6366f1',
-            dark: '#0f172a',
-            metallic: '#c7d2fe',
+            bgdark: '#0A192F',
+            primary:   '#00BFFF',
+            secondary: '#A337FF',
+            success:   '#00FF87',
+            neutral:   '#F5F5F5',
+            muted:     '#94A3B8',
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            heading: ['Poppins', 'sans-serif'],
           }
         }
       }
     }
   </script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
-    body { font-family: 'Inter', system-ui, sans-serif; background: linear-gradient(to bottom right, #0f172a, #1e1b4b, #0f172a); }
-    .glass { backdrop-filter: blur(12px); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.12); box-shadow: 0 8px 32px rgba(0,0,0,0.35); }
-    .glass-hover:hover { background: rgba(255,255,255,0.08); transform: translateY(-4px); box-shadow: 0 16px 40px rgba(99,102,241,0.15); transition: all 0.3s ease; }
-    .metallic-text { background: linear-gradient(90deg, #c7d2fe, #ffffff); -webkit-background-clip: text; background-clip: text; color: transparent; }
-    .section-glow { background: radial-gradient(circle at 50% 50%, rgba(99,102,241,0.08), transparent 70%); }
-    .marquee { animation: marquee 20s linear infinite; }
-    @keyframes marquee {
-      from { transform: translateX(0); }
-      to { transform: translateX(-50%); }
+    .glass {
+      background: rgba(255, 255, 255, 0.04);
+      backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 10px 40px rgba(0,0,0,0.45);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .glass:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.55);
+    }
+    .hero-glow {
+      text-shadow: 0 0 40px rgba(0, 191, 255, 0.4), 0 0 80px rgba(163, 55, 255, 0.2);
+    }
+    .fade-in-section {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+    }
+    .fade-in-section.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .icon-hover:hover {
+      color: #00BFFF;
+    }
+    .section-divider {
+      height: 1px;
+      background: linear-gradient(to right, transparent, rgba(0, 191, 255, 0.2), transparent);
+      margin: 6rem auto;
+      max-width: 80%;
+    }
+    @media (max-width: 768px) {
+      .section-padding {
+        padding-top: 8rem !important;
+        padding-bottom: 8rem !important;
+      }
+      .section-divider {
+        margin: 4rem auto;
+      }
     }
   </style>
-  <script
-  src="https://cdn.apigateway.co/webchat-client..prod/sdk.js"
-  data-widget-id="3d4868c8-fbc4-11f0-b22f-624d8abf8f93"
-  defer
-></script>
 </head>
-<body class="text-white min-h-screen overflow-x-hidden">
-
-  <!-- Top Bar -->
+<body class="bg-bgdark text-neutral antialiased" onload="lucide.createIcons()">
+<!-- Top Bar -->
   <div class="fixed top-0 w-full z-50 bg-dark/80 backdrop-blur-md text-gray-300 text-sm">
     <div class="max-w-7xl mx-auto px-6 py-2 flex justify-end items-center space-x-6">
       <a href="tel:+15075095368" class="hover:text-white transition flex items-center">
